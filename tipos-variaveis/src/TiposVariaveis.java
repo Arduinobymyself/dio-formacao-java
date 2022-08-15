@@ -17,6 +17,7 @@ public class TiposVariaveis {
         int numeroNormal = numeroCurto; //um short cabe em um int, sem problemas
         short numeroCurto2 = numeroNormal; //apesar de numero normal ser menor que o limite de um short,
         // em algum momento ele poderá ser maior e portanto não é possível fazer o casting
+        // e isso provavelmente gerará um erro.
 
 
 
