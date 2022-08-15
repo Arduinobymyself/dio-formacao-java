@@ -8,8 +8,8 @@ public class TiposVariaveis {
         byte idade = 123;
         short ano = 2022;
         int cep = 18050000; //se começar com zero, talvez tenha que ser outro tipo
-        long cpf = 12345678910; //se começar com zero, talvez tenha que ser outro tipo
-        float pi = 3.14f;
+        long cpf = 12345678910L; //se começar com zero, talvez tenha que ser outro tipo
+        float pi = 3.14F;
         double salario = 1275.33;
 
         //casting - conversão entre tipos
