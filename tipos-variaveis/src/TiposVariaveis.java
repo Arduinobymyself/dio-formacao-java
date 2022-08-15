@@ -15,7 +15,7 @@ public class TiposVariaveis {
         //casting - conversão entre tipos
         short numeroCurto = 1;
         int numeroNormal = numeroCurto; //um short cabe em um int, sem problemas
-        short numeroCurto2 = numeroNormal; //apesar de numero normal ser menor que o limite de um short,
+        //short numeroCurto2 = numeroNormal; //apesar de numero normal ser menor que o limite de um short,
         // em algum momento ele poderá ser maior e portanto não é possível fazer o casting
         // e isso provavelmente gerará um erro.
 
@@ -39,7 +39,7 @@ public class TiposVariaveis {
          */
         final double VALOR_DE_PI = 3.1415927; //constantes devem ser declaradas como final
 
-        VALOR_DE_PI = 3.14; // isso gerará um erro pois uma constante não pode ter seu valor alterado
+        //VALOR_DE_PI = 3.14; // isso gerará um erro pois uma constante não pode ter seu valor alterado
 
     }
 }
