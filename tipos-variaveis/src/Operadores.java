@@ -39,6 +39,28 @@ public class Operadores {
         System.out.println(concatenacao); // 1111
 
 
+        //Operadores unários
+        int numero = 5;
+
+        //Imprimendo o número negativo
+        System.out.println(- numero); // -5
+        System.out.println(numero);  // 5
+
+        //incrementando o número
+        numero ++;
+        System.out.println(numero); // 6
+
+        //incrementando novamente
+        System.out.println(numero ++); // 6
+        System.out.println(numero); // 7
+
+
+        //ordem de precedência conta
+        System.out.println(++ numero); // 8
+
+        boolean verdadeiro = true;
+        System.out.println("Inverteu " + !verdadeiro); // Inverteu false
+
 
 
     }
