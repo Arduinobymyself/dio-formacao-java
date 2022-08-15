@@ -19,7 +19,7 @@ public class TiposVariaveis {
         // em algum momento ele poderá ser maior e portanto não é possível fazer o casting
         // e isso provavelmente gerará um erro.
 
-
+        final double VALOR_DE_PI = 3.1415927; //constantes devem ser declaradas como final
 
     }
 }
