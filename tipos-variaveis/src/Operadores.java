@@ -111,13 +111,41 @@ public class Operadores {
 
 
         //tratando como objeto
-        Integer numero3 = 130;
-        Integer numero4 = 130;
-        System.out.println(numero3 == numero4); // false
+        //Integer numero3 = 130;
+        //Integer numero4 = 130;
+        //System.out.println(numero3 == numero4); // false
         // a razão pela qual o resultado é false, é devido que o Java trata os valores
         // como objetos a partir da criação da variável
         // quando queremos comparar objetos, usamos o método equals
-        System.out.println(numero1.equals(numero2));
+        //System.out.println(numero1.equals(numero2));
+
+        //OPERADORES LÓGICOS
+        boolean condicao1=true;
+        boolean condicao2=false;
+
+        /* Aqui estamos utilizando o operador lógico E para fazer a união de duas
+        expressões.
+        É como se estivesse escrito:
+         "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+        */
+
+        if(condicao1 && condicao2)
+            System.out.println("Os dois valores precisam ser verdadeiros");;
+
+        //Se condicao1 OU condicao2 for verdadeira, executar código.
+        if(condicao1 || condicao2)
+            System.out.println("Um dos valores precisa ser verdadeiro");
+
+
+        int numero5 = 1;
+        int numero6 = 1;
+
+        if(numero5 == 1 || numero6++ == 2 )
+            System.out.println("As 2 condicoes sao verdadeiras");
+
+        System.out.println("O numero 5 agora eh " + numero5);
+        System.out.println("O numero 6 agora eh " + numero6);
+
 
     }
 }
