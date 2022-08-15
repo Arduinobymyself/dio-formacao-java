@@ -24,6 +24,9 @@ public class Operadores {
         String nomeCompleto = "Linguagem" + " " + "Java";
         System.out.println(nomeCompleto); // Linguagem Java
 
+        System.out.println(nome + " tem " + idade + " anos de idade e pesa " + peso + " Kg eh do sexo " + sexo +
+                " e doa orgaos: " + doadorOrgao);
+
         //Qual o resultado das expressões abaixo
         String concatenacao = "?";
 
@@ -43,7 +46,7 @@ public class Operadores {
         int numero = 5;
 
         //Imprimendo o número negativo
-        System.out.println(-numero); // -5 imprime a inversão mas não modifica o número
+        System.out.println(-numero); // -5 imprime a inversão, mas não modifica o número
         System.out.println(numero);  // 5
 
         //incrementando o número
