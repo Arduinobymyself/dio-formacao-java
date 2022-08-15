@@ -43,25 +43,33 @@ public class Operadores {
         int numero = 5;
 
         //Imprimendo o número negativo
-        System.out.println(- numero); // -5
+        System.out.println(-numero); // -5 imprime a inversão mas não modifica o número
         System.out.println(numero);  // 5
 
         //incrementando o número
-        numero ++;
+        // numero = numero + 1
+        numero++;
         System.out.println(numero); // 6
 
         //incrementando novamente
-        System.out.println(numero ++); // 6
-        System.out.println(numero); // 7
+        System.out.println(numero++); // 6 primeiro imprimiu o valor e depois incrementou
+        System.out.println(numero); // 7 número já incrementado
 
 
         //ordem de precedência conta
-        System.out.println(++ numero); // 8
+        System.out.println(++numero); // 8 nesse caso, primeiro ele incrementa e dpois imprime
 
         boolean verdadeiro = true;
         System.out.println("Inverteu " + !verdadeiro); // Inverteu false
 
 
+        //operador ternário
+        int a, b;
+        a = 6;
+        b = 5;
+
+        String resultadoOperadorTernario = (a == b) ? "Verdadeiro, a = b" : "Falso, a != b";
+        System.out.println(resultadoOperadorTernario);
 
     }
 }
