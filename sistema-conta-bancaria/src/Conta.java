@@ -1,30 +1,30 @@
 public class Conta {
-    //vari√°vel da classe Conta
+    //vari·vel da classe Conta
     double saldo = 100.0;
 
     public void sacar(Double valor){
-        //vari√°vel local do m√©todo
+        //vari·vel local do mÈtodo
         double novoSaldo = saldo - valor;
     }
 
     public void imprimirSaldo(){
-        //dispon√≠vel em toda a classe
+        //disponÌvel em toda a classe
         System.out.println(saldo);
-        //dispon√≠vel somente no m√©todo sacar, vai gerar um erro
+        //disponÌvel somente no mÈtodo sacar, vai gerar um erro
         //System.out.println(novoSaldo);
     }
 
     public double calcularDividaExponencial(){
-        //vari√°vel local de m√©todo
+        //vari·vel local de mÈtodo
         double valorParcela = 50.0;
         double valorMontante = 0.0;
-        for(int x = 1; x <= 5; x++){//x √© uma vair√°vel com escopo de fluxo
-            //esta vari√°vel ser√° reiniciada a cada execu√ß√£o
+        for(int x = 1; x <= 5; x++){//x È uma vair·vel com escopo de fluxo
+            //esta vari·vel ser· reiniciada a cada execuÁ„o
             double valorCalculado = valorParcela * x;
             valorMontante = valorMontante + valorCalculado;
         }
         //escopo de fluxo
-        //x e valorCalculado nunca estar√£o dispon√≠veis fora do for
+        //x e valorCalculado nunca estar„o disponÌveis fora do for
 
         return valorMontante;
     }
