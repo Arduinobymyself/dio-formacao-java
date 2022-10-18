@@ -20,6 +20,8 @@ public class ExemploSet {
         Set<Double> notas = new HashSet<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
         System.out.println(notas.toString());
 
+        // set não possui índice
+
 //        System.out.println("Exiba a posição da nota 5.0: ");
 
 //        System.out.println("Adicione na lista a nota 8.0 na posição 4: ");
