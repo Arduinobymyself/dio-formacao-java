@@ -41,7 +41,7 @@ public class Fila<T> {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return (T) primeiroNo.getObject();
         }
         return null;
     }

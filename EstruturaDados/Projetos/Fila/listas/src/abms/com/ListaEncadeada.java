@@ -7,6 +7,7 @@ public class ListaEncadeada<T> {
         this.referenciaEntrada = null;
     }
 
+    // remove de um índice específico
     public T remove(int index){
         No<T> noPivot = this.getNo(index);
         if(index == 0){
@@ -36,18 +37,22 @@ public class ListaEncadeada<T> {
         return noRetorno;
     }
 
+    //sdiciona no final da lista
     public void add(T conteudo){
-        No<T> novoNo = new No<>(conteudo); //cria um novo nó
+        No<T> novoNo = new No<>(conteudo); //cria um novo nócom o conteúdo
 
         if(this.isEmpty()){
-            referenciaEntrada = novoNo;
+            referenciaEntrada = novoNo; //passa a referência em memória do objeto novoNo
             return;
         }
 
-        No<T> noAuxiliar = referenciaEntrada;
+        No<T> noAuxiliar = referenciaEntrada; // cria um novo nó auxiliar  e recebe a referência em memória
+
+        //percorre a lista até o final e adiciona o novo nó
         for(int i = 0; i < this.size() - 1; i++){
             noAuxiliar = noAuxiliar.getProximoNo();
         }
+        // adiciona o novo nó
         noAuxiliar.setProximoNo(novoNo);
     }
 
@@ -74,7 +79,7 @@ public class ListaEncadeada<T> {
             int ultimoIndice = size() - 1;
             throw new IndexOutOfBoundsException("Não existe conteúdo no índice "
                     + index
-                    + " Desta lista. Esta lista só vai até o índice "
+                    + " desta lista. Esta lista só vai até o índice "
                     + ultimoIndice
                     + " .");
         }

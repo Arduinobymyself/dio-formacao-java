@@ -46,9 +46,9 @@ public class No<T> {
                 "conteudo=" + conteudo +
                 '}';
         if(proximoNo != null){
-            str += "->" + proximoNo.toString();
+            str += "-->" + proximoNo.toString();
         }else{
-            str += "->null";
+            str += "-->null";
         }
         return str;
     }

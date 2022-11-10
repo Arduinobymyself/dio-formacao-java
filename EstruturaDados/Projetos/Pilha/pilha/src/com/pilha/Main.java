@@ -11,10 +11,11 @@ public class Main {
         minhaPilha.push(new No(4));
         minhaPilha.push(new No(5));
         minhaPilha.push(new No(6));
-
         System.out.println(minhaPilha);
+
         System.out.println(minhaPilha.pop());
         System.out.println(minhaPilha);
+        
         minhaPilha.push(new No(10));
         System.out.println(minhaPilha);
 

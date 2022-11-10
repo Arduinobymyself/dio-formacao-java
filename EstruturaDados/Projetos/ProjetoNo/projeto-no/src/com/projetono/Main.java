@@ -2,9 +2,12 @@ package com.projetono;
 
 public class Main {
     public static void main(String[] args) {
+
+        // instanciando os nós com seus conteúdos
         No<String> no1 = new No<>("Conteudo no1");
         No<String> no2 = new No<>("Conteudo no2");
 
+        // encadeando os nós
         no1.setProximoNo(no2);
 
         No<String> no3 = new No<>("Conteudo no3");

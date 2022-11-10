@@ -10,6 +10,7 @@ public class Main {
         minhaListaEncadeada.add("Teste 2");
         minhaListaEncadeada.add("Teste 3");
         minhaListaEncadeada.add("Teste 4");
+        System.out.println(minhaListaEncadeada);
 
 
         System.out.println(minhaListaEncadeada.get(0));
